@@ -153,7 +153,7 @@ app.get('/api/personal-info', async (req, res) => {
 
 // Route to update personal information of a user
 app.post('/api/update-personal-info', async (req, res) => {
-    const { email, role, first_name, last_name, phone, specialty, office, department } = req.body;
+    const { email, role, first_name, last_name, phone, specialty, office, department, dob, sex, marital_status, ethnicity, nationality, blood_type, height, weight, blood_pressure, bmi } = req.body;
 
     let query = '';
     let values = [];
