@@ -100,7 +100,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-repo.git](https://github.com/Shuaijun-LIU/BU-HealthCare-Web-App)
+    git clone https://github.com/Shuaijun-LIU/BU-HealthCare-Web-App
     cd your_project_directory
     ```
 
