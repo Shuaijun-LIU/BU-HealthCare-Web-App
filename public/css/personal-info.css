@@ -1,0 +1,165 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #757578;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header .top-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .nav-button {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .nav-button:hover {
+  background-color: #a00000;
+}
+
+header .nav-title {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-shrink: 0;
+  height: 100%; /* Ensure sidebar takes full height of the page */
+  margin-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #bb9494;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #c0c0c0;
+}
+
+.info-main {
+  flex: 1;
+  padding: 45px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -160px;
+  height: 100%; /* Ensure main content takes full height of the page */
+  margin-bottom: 30px;
+}
+
+.info-main h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 90%; /* Reduced width to shorten the input fields */
+  padding: 8px; /* Slightly smaller padding for a more compact appearance */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+button[type="submit"] {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a0000;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: red;
+}
+
+footer {
+  background-color: #757578;
+  color: #e8e3e3;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+  border-radius: 0;
+}

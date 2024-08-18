@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments</title>
+    <link rel="stylesheet" href="css/manage-appointment.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="user-name" class="nav-title">Welcome, [User Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <!-- Sidebar content will be dynamically generated based on the user role -->
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="info-main">
+        <h2>Manage Appointments</h2>
+        
+        <div id="appointment-list">
+            <h3>Appointment List</h3>
+            <table id="appointments-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Type</th>
+                        <th>Scheduled For</th>
+                        <th>Student</th>
+                        <th>Doctor</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Appointment rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="appointment-form">
+            <h3 id="form-title">Add New Appointment</h3>
+            <form id="manage-appointment-form">
+                <input type="hidden" id="appointment-id">
+                
+                <label for="appointment-type">Type:</label>
+                <input type="text" id="appointment-type" required>
+                
+                <label for="scheduled-for">Scheduled For:</label>
+                <input type="datetime-local" id="scheduled-for" required>
+                
+                <label for="student-id">Student ID:</label>
+                <input type="number" id="student-id" required>
+                
+                <label for="doctor-id">Doctor ID:</label>
+                <input type="number" id="doctor-id" required>
+
+                <label for="status-id">Status ID:</label>
+                <input type="number" id="status-id" required>
+
+                <button type="submit">Save Appointment</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/manage-appointment.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="css/personal-info.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="user-name" class="nav-title">Welcome, [User Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="student-appointment.html">Book Appointment</a></li>
+            <li><a href="appointment-history.html">Appointment History</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="info-main">
+        <h2>Personal Information</h2>
+        <form id="personal-info-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required disabled>
+                </div>
+            </div>
+
+            <!-- student fields -->
+            <div id="student-fields" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sex">Sex:</label>
+                        <select id="sex" name="sex">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="marital-status">Marital Status:</label>
+                        <select id="marital-status" name="marital-status">
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ethnicity">Ethnicity:</label>
+                        <input type="text" id="ethnicity" name="ethnicity">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" id="nationality" name="nationality">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="blood-type">Blood Type:</label>
+                        <input type="text" id="blood-type" name="blood-type">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="height">Height (cm):</label>
+                        <input type="number" step="0.01" id="height" name="height">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" step="0.01" id="weight" name="weight">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="blood-pressure">Blood Pressure:</label>
+                        <input type="text" id="blood-pressure" name="blood-pressure">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bmi">BMI:</label>
+                        <input type="number" step="0.01" id="bmi" name="bmi">
+                    </div>
+                </div>
+            </div>
+
+            <!-- doctor fields -->
+            <div id="doctor-fields" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="specialty">Specialty:</label>
+                        <input type="text" id="specialty" name="specialty">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="office">Office:</label>
+                        <input type="text" id="office" name="office">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department">
+                    </div>
+                </div>
+            </div>
+
+            <!-- admin fields -->
+            <div id="admin-fields" style="display: none;">
+                <!-- Admin specific fields can be added here -->
+            </div>
+
+            <button type="submit">Update Information</button>
+        </form>
+
+        <div id="feedback" class="feedback"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/personal-info.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="css/manage-students.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="user-name" class="nav-title">Welcome, [User Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <!-- Sidebar content will be dynamically generated based on the user role -->
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="info-main">
+        <h2>Manage Students</h2>
+        
+        <div id="student-list">
+            <h3>Student List</h3>
+            <table id="students-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="student-form">
+            <h3 id="form-title">Add New Student</h3>
+            <form id="manage-student-form">
+                <input type="hidden" id="student-id">
+                
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="sex">Sex:</label>
+                <select id="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="marital-status">Marital Status:</label>
+                <select id="marital-status" required>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+
+                <label for="ethnicity">Ethnicity:</label>
+                <input type="text" id="ethnicity" required>
+
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" required>
+
+                <label for="blood-type">Blood Type:</label>
+                <input type="text" id="blood-type" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" step="0.01" id="height">
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" step="0.01" id="weight">
+
+                <label for="blood-pressure">Blood Pressure:</label>
+                <input type="text" id="blood-pressure">
+
+                <label for="bmi">BMI:</label>
+                <input type="number" step="0.01" id="bmi">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Save Student</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/manage-students.js"></script>
+</body>
+</html>

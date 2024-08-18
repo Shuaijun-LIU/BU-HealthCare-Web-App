@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston University Student Health Care</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/bu-logo.gif" alt="Boston University Logo">
+        </div>
+        <h1>Boston University Student Health Care</h1>
+        <div id="nav-buttons" class="hidden">
+        </div>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Boston University Student Health Care Service!</h2>
+            <p>Please select your role to proceed to the respective management interface. We are dedicated to providing a convenient and efficient health service management experience for students, doctors, and administrators.</p>
+            <div class="image-slider">
+                <div class="slider-track">
+                    <img src="images/image1.jpg" alt="Image 1">
+                    <img src="images/image2.jpg" alt="Image 2">
+                    <img src="images/image3.jpg" alt="Image 3">
+                    <img src="images/image4.jpg" alt="Image 4">
+                    <img src="images/image5.jpg" alt="Image 5">
+                    <img src="images/image6.jpg" alt="Image 6">
+                    <!-- Repeat images for seamless loop -->
+                    <img src="images/image1.jpg" alt="Image 1">
+                    <img src="images/image2.jpg" alt="Image 2">
+                </div>
+            </div>
+        </section>
+        
+        <section class="role-selection">
+            <div class="role-card">
+                <h3>Student</h3>
+                <p>As a student, you can book appointments, view your health history, and manage your personal information.</p>
+                <button onclick="openLoginModal('student')">Select and Log In</button>
+            </div>
+            <div class="role-card">
+                <h3>Doctor</h3>
+                <p>As a doctor, you can manage student appointments, record diagnoses and prescriptions, and manage patient information.</p>
+                <button onclick="openLoginModal('doctor')">Select and Log In</button>
+            </div>
+            <div class="role-card">
+                <h3>Administrator</h3>
+                <p>As an administrator, you can manage doctors, students, appointments, and medical records to ensure the smooth operation of the system.</p>
+                <button onclick="openLoginModal('admin')">Select and Log In</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button onclick="login()">Log In</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+    
+    <script src="js/home.js"></script>
+</body>
+</html>

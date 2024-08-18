@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Doctors</title>
+    <link rel="stylesheet" href="css/manage-doctors.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="user-name" class="nav-title">Welcome, [User Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <!-- Sidebar content will be dynamically generated based on the user role -->
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="info-main">
+        <h2>Manage Doctors</h2>
+        
+        <div id="doctor-list">
+            <h3>Doctor List</h3>
+            <table id="doctors-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Specialty</th>
+                        <th>Office</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Doctor rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="doctor-form">
+            <h3 id="form-title">Add New Doctor</h3>
+            <form id="manage-doctor-form">
+                <input type="hidden" id="doctor-id">
+                
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required>
+                
+                <label for="specialty">Specialty:</label>
+                <input type="text" id="specialty" required>
+                
+                <label for="office">Office:</label>
+                <input type="text" id="office" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="department-id">Department ID:</label>
+                <input type="number" id="department-id" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Save Doctor</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/manage-doctors.js"></script>
+</body>
+</html>

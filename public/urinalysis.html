@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Urinalysis</title>
+    <link rel="stylesheet" href="css/urinalysis.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="user-name" class="nav-title">Welcome, [User Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <!-- Sidebar content will be dynamically generated based on the user role -->
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="info-main">
+        <h2>Manage Urinalysis</h2>
+        
+        <div id="urinalysis-list">
+            <h3>Urinalysis List</h3>
+            <div class="table-container">
+                <table id="urinalysis-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>pH</th>
+                            <th>Specific Gravity</th>
+                            <th>Glucose</th>
+                            <th>Protein</th>
+                            <th>Bilirubin</th>
+                            <th>Urobilinogen</th>
+                            <th>Blood</th>
+                            <th>Ketone</th>
+                            <th>Nitrite</th>
+                            <th>Leukocytes</th>
+                            <th>Ascorbic Acid</th>
+                            <th>Clarity</th>
+                            <th>Color</th>
+                            <th>Collected At</th>
+                            <th>Doctor ID</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Urinalysis rows will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="urinalysis-form">
+            <h3 id="form-title">Edit Urinalysis</h3>
+            <form id="manage-urinalysis-form">
+                <input type="hidden" id="urinalysis-id">
+                
+                <label for="pH">pH:</label>
+                <input type="number" step="0.001" id="pH" required>
+                
+                <label for="specific-gravity">Specific Gravity:</label>
+                <input type="number" step="0.001" id="specific-gravity" required>
+                
+                <label for="glucose">Glucose:</label>
+                <input type="number" step="0.001" id="glucose" required>
+                
+                <label for="protein">Protein:</label>
+                <input type="number" step="0.001" id="protein" required>
+
+                <label for="bilirubin">Bilirubin:</label>
+                <input type="number" step="0.001" id="bilirubin" required>
+
+                <label for="urobilinogen">Urobilinogen:</label>
+                <input type="number" step="0.001" id="urobilinogen" required>
+
+                <label for="blood">Blood:</label>
+                <input type="number" step="0.001" id="blood" required>
+
+                <label for="ketone">Ketone:</label>
+                <input type="number" step="0.001" id="ketone" required>
+
+                <label for="nitrite">Nitrite:</label>
+                <input type="number" step="0.001" id="nitrite" required>
+
+                <label for="leukocytes">Leukocytes:</label>
+                <input type="number" step="0.001" id="leukocytes" required>
+
+                <label for="ascorbic-acid">Ascorbic Acid:</label>
+                <input type="number" step="0.001" id="ascorbic-acid" required>
+
+                <label for="clarity">Clarity:</label>
+                <input type="text" id="clarity" required>
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" required>
+
+                <label for="collected-at">Collected At:</label>
+                <input type="datetime-local" id="collected-at" required>
+
+                <label for="doctor-id">Doctor ID:</label>
+                <input type="number" id="doctor-id" required>
+
+                <button type="submit">Save Urinalysis</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/urinalysis.js"></script>
+</body>
+</html>

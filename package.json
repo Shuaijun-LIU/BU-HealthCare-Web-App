@@ -1,0 +1,19 @@
+{
+  "name": "buhealthcare",
+  "version": "1.0.0",
+  "description": "This project is designed to help BU MET professors and students ask and get answers to their questions efficiently. The system supports both <strong>NLP-based</strong> and <strong>GPT-based</strong> question answering. Users can register, log in, and start asking questions right away.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.0"
+  }
+}

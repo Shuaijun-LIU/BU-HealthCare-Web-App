@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #757578;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header .top-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .nav-button {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header .nav-button:hover {
+  background-color: #a00000; /* Darker shade of red on hover */
+}
+
+header .nav-title {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px; /* Rounded border for the sidebar */
+  margin-top: 20px; /* Moves the sidebar further down */
+  margin-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #bb9494;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sidebar ul li a:hover {
+  background-color: #c0c0c0; /* Lighter gray background on hover */
+}
+
+.history-main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded border for the table */
+  overflow: hidden; /* Ensures rounded corners display properly */
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #800000;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffe5e5;
+}
+
+.feedback {
+  color: red;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #757578;
+  color: #e8e3e3;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+  border-radius: 0; /* Removed rounded border from the footer */
+}

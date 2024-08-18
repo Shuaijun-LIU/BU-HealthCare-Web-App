@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment History</title>
+    <link rel="stylesheet" href="css/appointment-history.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="student-name" class="nav-title">Welcome, [Student Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button> <!-- Logout 按钮调用 logout() 函数 -->
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="personal-info.html">Personal Information</a></li>
+            <li><a href="student-appointment.html">Book Appointment</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="history-main">
+        <h2>Your Appointment History</h2>
+        <div id="feedback" class="feedback"></div>
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Appointment Type</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Diagnosis</th>
+                    <th>Prescription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Appointment history records will be dynamically inserted here via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/appointment-history.js"></script> <!-- 确保此文件中包含 logout 函数 -->
+</body>
+</html>

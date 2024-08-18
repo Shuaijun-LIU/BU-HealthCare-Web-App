@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Appointment</title>
+    <link rel="stylesheet" href="css/student-appointment.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header>
+        <nav class="top-nav">
+            <button class="nav-button" onclick="window.location.href='home.html'">Home</button>
+            <span id="student-name" class="nav-title">Welcome, [Student Name]</span>
+            <button class="nav-button" onclick="logout()">Logout</button> <!-- Logout 按钮调用 logout() 函数 -->
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="personal-info.html">Personal Information</a></li>
+            <li><a href="appointment-history.html">Appointment History</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="appointment-main">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="appointment-type">Select Appointment Type:</label>
+            <select id="appointment-type" name="appointment-type" required>
+                <option value="">--Select Type--</option>
+            </select>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">--Select Doctor--</option>
+            </select>
+
+            <label for="appointment-date">Select Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Select Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <!-- Feedback Area -->
+        <div id="feedback" class="feedback"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BU Student Health Care - Developed by Shuaijun Liu</p>
+    </footer>
+
+    <script src="js/student-appointment.js"></script> 
+</body>
+</html>
