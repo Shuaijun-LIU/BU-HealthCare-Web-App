@@ -100,13 +100,13 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-repo.git
+    git clone [https://github.com/your-repo.git](https://github.com/Shuaijun-LIU/BU-HealthCare-Web-App)
     cd your_project_directory
     ```
 
 2. **Install the dependencies:**
     ```sh
-    npm install
+    npm install express body-parser mysql2 bcrypt jsonwebtoken express-session multer express-xml-bodyparser xml2js nodemon dotenv cors validator
     ```
 
 3. **Install `nodemon` as a dev dependency to automatically restart the server on changes:**
