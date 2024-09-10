@@ -2,6 +2,15 @@
 
 This project is designed to help Boston University students, doctors, and administrators manage health-related tasks efficiently. The system includes functionalities for managing appointments, prescriptions, urinalysis records, and more. Users can register, log in, and utilize various health services provided by the Student Health Center.
 
+### ✍️ Author
+| Role                                 | Name                   |
+|--------------------------------------|------------------------|
+| Project Manager, Full Stack Development | Shuaijun Liu |
+| Project Manager, Full Stack Development | Yifan Wu |
+
+
+
+
 ## 🎨 Project Structure
 
 ```
